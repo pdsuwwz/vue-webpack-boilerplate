@@ -12,6 +12,11 @@ const routes = [
   {
     path: '/demo',
     component: importModule('views/example-page')
+  },
+  {
+    path: '/:pathMatch(.*)',
+    name: '404',
+    component: () => import('@/components/404.vue')
   }
 ]
 
