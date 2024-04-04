@@ -42,7 +42,7 @@
     "@vue/compiler-sfc": "^3.2.47",
     "babel-loader": "^9.1.2",
     "cross-env": "^7.0.3",
-    "css-loader": "^6.7.3",
+    "css-loader": "^7.0.0",
     "eslint": "^8.35.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
