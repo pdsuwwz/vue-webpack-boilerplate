@@ -1,8 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-const importModule = (filePath) => {
-  return () => import(`@/${filePath}`)
-}
 
 const routes = [
   {
@@ -11,7 +8,7 @@ const routes = [
   },
   {
     path: '/demo',
-    component: importModule('views/example-page')
+    component: () => import('@/views/example-page.vue')
   },
   {
     path: '/:pathMatch(.*)',
