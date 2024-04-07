@@ -1,7 +1,6 @@
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
-const ESLintPlugin = require('eslint-webpack-plugin')
 
 const { resolve } = require('./utils')
 
@@ -118,9 +117,6 @@ const webpackConfig = {
     ]
   },
   plugins: [
-    new ESLintPlugin({
-      emitWarning: false
-    }),
     new HtmlWebpackPlugin({
       favicon: './public/favicon.ico',
       template: './public/index.html'
